@@ -1,0 +1,24 @@
+[project]
+name = "market-intelligence-mvp"
+version = "0.2.0"
+description = "Autonomous market intelligence MVP - complete Steps 1-15"
+requires-python = ">=3.11"
+dependencies = [
+  "alembic>=1.16,<2",
+  "feedparser>=6.0,<7",
+  "httpx>=0.28,<1",
+  "langgraph>=0.6,<1",
+  "openai>=1.99,<2",
+  "pgvector>=0.4,<1",
+  "psycopg[binary]>=3.2,<4",
+  "pydantic>=2.11,<3",
+  "pydantic-settings>=2.10,<3",
+  "python-dotenv>=1.1,<2",
+  "scikit-learn>=1.7,<2",
+  "sentence-transformers>=5.1,<6",
+  "sqlalchemy>=2.0,<3",
+  "tenacity>=9,<10",
+]
+
+[project.scripts]
+market-intel = "app.main:main"
