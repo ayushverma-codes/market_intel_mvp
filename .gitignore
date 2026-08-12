@@ -7,3 +7,5 @@ __pycache__/
 .ruff_cache/
 .idea/
 .vscode/
+
+settings.py.tmp
